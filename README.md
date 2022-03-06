@@ -1,3 +1,10 @@
+# Problem faced
+https://www.freecodecamp.org/news/deploy-a-react-app-to-github-pages/
+
+https://stackoverflow.com/questions/69975792/error-home-is-not-a-route-component-all-component-children-of-routes-mus
+
+https://stackoverflow.com/questions/69975792/error-home-is-not-a-route-component-all-component-children-of-routes-mus
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

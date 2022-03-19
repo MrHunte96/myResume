@@ -1,0 +1,31 @@
+.contact__container {
+    background: var(--color-bg-variant);
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.contact__title {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.contact__title-icon {
+    margin-top: 5px;
+}
+
+/* MEDIA QUERIES (MEDIUM DEVICES) */
+@media screen and (max-width: 1024px) {
+    .container .contact_container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+/* MEDIA QUERIES (SMALL DEVICES) */
+@media screen and (max-width: 600px) {
+    .container .contact_container {
+        width: var(--container-width-sm);
+    }
+}

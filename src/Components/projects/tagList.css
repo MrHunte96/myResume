@@ -1,0 +1,13 @@
+.portfolio__item-tagList {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.portfolio__item-tagItem {
+    width: max-content;
+    padding: 0 0.5rem 0 0.5rem;
+    background: blueviolet;
+    border-radius: 1rem;
+    color: var(--color-white);
+}

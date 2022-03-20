@@ -1,5 +1,9 @@
 import React, { useState } from "react";
+
 import ModalButton from "./ProjectModal";
+import TagList from "./TagList";
+
+import './projectShowModal.css';
 
 const ProjectShowMore = ({ displayList }) => {
     const [isReadMore, setIsReadMore] = useState(true);
@@ -10,12 +14,14 @@ const ProjectShowMore = ({ displayList }) => {
         <>
             <div className="container portfolio__container">
                 {
-                    (isReadMore ? displayList.slice(0, 3) : displayList).map(({ id, splashImg, images, title, year, content, links }) => {
+                    (isReadMore ? displayList.slice(0, 3) : displayList).map(({ id, splashImg, images, title, year, tags, content, links }) => {
                         return (
                             <article key={id} className='portfolio__item'>
                                 <div className="portfolio__item-image">
                                     <img src={splashImg} alt={title} />
                                 </div>
+                                
+                                <TagList taglist={tags} />
 
                                 <h3>{title + " (" + year + ")"}</h3>
                                 {
@@ -23,7 +29,7 @@ const ProjectShowMore = ({ displayList }) => {
                                 }
                                 
                                 <div className='portfolio__item-cta'>
-                                    <ModalButton splashImg={splashImg} images={images} title={title} year={year} content={content} links={links}/>
+                                    <ModalButton splashImg={splashImg} images={images} title={title} year={year} tags={tags} content={content} links={links}/>
                                 </div>
                             </article>
                         )

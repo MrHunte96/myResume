@@ -6,7 +6,7 @@ import './experience.css';
 const languages = [
     { id: 1, language: 'C++', proficiency: 's100' },
     { id: 2, language: 'Python', proficiency: 's60' },
-    { id: 3, language: 'MySql', proficiency: 's60' },
+    { id: 3, language: 'MySql', proficiency: 's40' },
     { id: 4, language: 'C#', proficiency: 's40' },
     { id: 5, language: 'Html/Css', proficiency: 's20' },
     { id: 6, language: 'Javascript', proficiency: 's20' }
@@ -15,7 +15,7 @@ const languages = [
 const softwares = [
     { id: 1, software: 'Unity3D', proficiency: 's80' },
     { id: 2, software: 'Photoshop', proficiency: 's80' },
-    { id: 3, software: 'Maya', proficiency: 's60' },
+    { id: 3, software: 'Maya', proficiency: 's40' },
     { id: 4, software: 'React', proficiency: 's20' },
     { id: 5, software: 'QT', proficiency: 's10' },
 ];

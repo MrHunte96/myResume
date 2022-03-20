@@ -2,16 +2,16 @@ import React from 'react';
 
 import ShowMoreProjects from './ProjectShowMore'
 
-import './projects.css';
-
 const googleLink = "https://drive.google.com/uc?export=view&id=";
 const projects = [
     {
         id: 1,
         splashImg: googleLink + "1rzuh0PqztB16TQf00T-WgWr5iCJP_Glh",
         images: [],
+        video: '',
         title: 'Spiritus',
         year: 2021,
+        tags: ['C++', 'C#', 'OpenGL', 'Custom 3D Engine'],
         content: 'Spiritus is a 3rd person adventure/exploration game with puzzle elements. \
                   Set in a world where toxic fumes and unbreathable air have seeped into the bowels of planet, \
                   an Automaton constructed by the planet\'s previous inhabitants awakens deep underground. \
@@ -27,6 +27,7 @@ const projects = [
         images: [],
         title: 'Cosmic Hunter : Bounties of the Galaxy',
         year: 2020,
+        tags: ['C++', 'C#', 'OpenGL', 'Custom 2D Engine'],
         content: 'Cosmic Hunter is a shoot \'em up game where the galactic bounty hunter that travels around the \
                   galaxy hunting down infamous marks in an attempt to repay an enormous debt.',        
         links: { gameplay: 'https://youtu.be/ZhFr5RP1OGM',
@@ -37,6 +38,7 @@ const projects = [
         images: [],
         title: 'Yippy\'s Fortress',
         year: 2019,
+        tags: ['C++', 'OpenGL'],
         content: 'Yippy\'s Fortress is a 2D co-op platformer game whereby 2 players must work closely together \
                   and defeat the bosses on each floor to progress up the fortress until the final boss is defeated. \
                   The objective of the game is to defeat each boss swiftly, which requires teamwork and strategy. \
@@ -50,6 +52,7 @@ const projects = [
         images: [],
         title: 'Step',
         year: 2018,
+        tags: ['C++', 'Win32 Console'],
         content: 'STEP is a 2D puzzle/adventure game. Player\s goal is to find a way out of the cave. \
                   As level progress, player will be introduced to more mechanics. In addition, at later levels, \
                   there are multiple path for the player to choose, based on the path chosen, it will take \
@@ -62,6 +65,7 @@ const projects = [
         images: [],
         title: 'Numerelic',
         year: 2016,
+        tags: ['C#', 'Unity3D'],
         content: 'As a young talented student in Pasir Ris Primary School, with outstanding grades and excellent \
                     athletic skills. Sent to the realm of INTEGER, the player’s only hope of making it back is to \
                     traverse their bizarre puzzle world of mathematics and locate the statue of Numerelic, \
@@ -78,6 +82,7 @@ const projects = [
         images: [],
         title: 'Undefined Invasion',
         year: 2015,
+        tags: ['C#', 'Unity3D'],
         content: 'Undefined Invasion is 2D top-down shooter game made within 48 hours during an event host by \
                    our course mates. You, as an undefined shape is hunted by other defined shapes \
                    (triangle/square/pentagon/hexagon). Eliminate all other shapes and escape. \
@@ -90,6 +95,7 @@ const projects = [
         images: [],
         title: 'Vroom Vroom Rider',
         year: 2014,
+        tags: ['C#', 'Unity3D'],
         content: 'Vroom Vroom Rider is a two player split screen, 3D racing game. \
                    It includes a simple race track with obstacles. \
                    Players race against each other as well as 2 AI car. \
@@ -107,7 +113,8 @@ const personalProjects = [
         splashImg: "https://github.com/MrHunte96/Wordle_In_Python/blob/main/Assets/Logo2.png?raw=true",
         images: [],
         title: 'Wordle In Python',
-        year: 2021,
+        year: 2022,
+        tags: ['Python', 'Pygame'],
         content: 'Wordle is a popular web-based game, hence I tried to make it in Python using pygame during my free time.',
         links: { github: 'https://github.com/MrHunte96/Wordle_In_Python',
                  download: 'https://github.com/MrHunte96/Wordle_In_Python/releases/download/Release/WordleGame.zip' }
@@ -117,6 +124,7 @@ const personalProjects = [
         images: [],
         title: 'Bounce Classic In Python',
         year: 2021,
+        tags: ['Python', 'Pygame'],
         content: 'Bounce is a game which I decided to make during my free time. \
                     It\'s one way to use the knowledge I have about game and to learn more about Python. \
                     \n\n Music by: Chua Hong Zhi \
@@ -129,6 +137,7 @@ const personalProjects = [
         images: [],
         title: 'N-Queens Problem',
         year: 2021,
+        tags: ['Google Script', 'Html', 'JavaScript'],
         content: 'Using google script with html/JavaScript to visualize N-Queen Problem, using backtracking algorithm',
         links: { download: 'https://script.google.com/macros/s/AKfycbwVq1cJ4IUmv2gRWlIb4b8uuOMhuT5noxMT1DUtffGP8zcVKUFwQOuRAzAexK0hpLHnzw/exec' }
     },{
@@ -137,6 +146,7 @@ const personalProjects = [
         images: [],
         title: 'Undefined Invasion - Invaded',
         year: 2017,
+        tags: ['C#', 'Unity3D'],
         content: 'Undefined Invasion - Invaded is a sequel to the first version of the game (Undefined Invasion) \
                   made in 2015. The main different is that it\'s a mobile game and player only controls the \
                   ship\'s shooting direction using a joystick.',
@@ -147,6 +157,7 @@ const personalProjects = [
         images: [],
         title: 'Spam Da Button',
         year: 2016,
+        tags: ['C#', 'Unity3D'],
         content: 'Spam Da Button is all about smashing buttons. \
                   The idea came about from an arcade game that focuses on smashing 3 buttons and completing varies task. \
                   Sadly, I did not finish the game and publish to google play store.',
@@ -157,6 +168,7 @@ const personalProjects = [
         images: [],
         title: 'Prisoner Escape',
         year: 2015,
+        tags: ['C#', 'Unity3D'],
         content: 'Prisoner Escape is a Crossy Road style game. Run! Tap! Swipe! \
                   Escape as far as you could from the police. \
                   Tap fast and do not let the Police Helicopter get close to you!',
@@ -167,6 +179,7 @@ const personalProjects = [
         images: [],
         title: 'Zoe Adventure',
         year: 2014,
+        tags: ['C', 'SDL'],
         content: 'Zoe Adventure is a 2D top-down scroller game. \
                     Players play as a water droplet extinguishing fire in the house. \
                     This is the very first game made entirely (Art/design/code) by me using C++ and SDL. \
@@ -176,7 +189,6 @@ const personalProjects = [
         links: {}
     }
 ];
-
 
 const Projects = () => {
     return (

@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+
+import TagList from "./TagList";
+
 import './projectModal.css'
 
-const Modal = ({ closeFunc, splashImg, images, title, year, content, links }) => {
+const Modal = ({ closeFunc, splashImg, images, title, year, tags, content, links }) => {
     return (
         <div className="container__modal">
             <div className="container__modal-content">
@@ -10,6 +13,9 @@ const Modal = ({ closeFunc, splashImg, images, title, year, content, links }) =>
                 <div className="container__modal-image">
                     <img src={splashImg} alt="" />
                 </div>
+                
+                <TagList taglist={tags} />
+
                 <div className="container__modal-details">
                     <h2>{title + " (" + year + ")"}</h2>
                     <p>{content}</p>

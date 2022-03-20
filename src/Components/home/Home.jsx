@@ -2,8 +2,8 @@ import React from 'react';
 import { BsLinkedin } from 'react-icons/bs'
 import { BsGithub } from 'react-icons/bs'
 
-import CV from '../../resources/HongWei-CV.pdf';
-import ProfileImg from '../../resources/background-texture.jpg'
+import CV from '../../resources/profile/hongwei_cv.pdf';
+import ProfileImg from '../../resources/profile/profile3.png'
 
 import './home.css';
 
@@ -19,8 +19,8 @@ const CTA = () => {
 const HeaderSocials = () => {
     return (
         <div className='header__socials'>
-            <a href="https://linkedin.com" target="_blank"><BsLinkedin /></a>
-            <a href="https://github.com" target="_blank"><BsGithub /></a>
+            <a href="https://www.linkedin.com/in/chuahongwei/" target="_blank"><BsLinkedin /></a>
+            <a href="https://github.com/MrHunte96" target="_blank"><BsGithub /></a>
         </div>
     )
 }
@@ -37,7 +37,7 @@ const Home = () => {
                 <HeaderSocials />
 
                 <div className="my-profile-image">
-                    <img src={ProfileImg} alt=""></img>
+                    <img src={ProfileImg} alt="profile_picture"></img>
                 </div>
 
                 <a href="#contact" className='scroll__down'> Scroll Down </a>

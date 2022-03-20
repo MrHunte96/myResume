@@ -2,7 +2,7 @@ import React from 'react';
 import { BsAwardFill } from 'react-icons/bs'
 import { AiFillFolder } from 'react-icons/ai'
 
-import ProfileImg from '../../resources/background-texture.jpg'; //'../../resources/profile.jpg'
+import ProfileImg from '../../resources/profile/profile4.jpg'; //'../../resources/profile.jpg'
 
 import './about.css';
 
@@ -25,20 +25,22 @@ const About = () => {
                             <BsAwardFill className='about__icon' />
                             <h5>Experience</h5>
                             <small>0+ Year Working</small>
-                            <br/>
+                            <br />
                             <small>(Fresh Graduate)</small>
                         </article>
                         <article className='about__card'>
                             <AiFillFolder className='about__icon' />
                             <h5>Projects</h5>
-                            <small>80+ completed</small>
+                            <small>10+ completed</small>
                         </article>
                     </div>
 
                     <p>
-                        lorem30 asdpj ao aoie fraweior aweio raoewra
-                        skldfn paweo aowf nsfa oiewj foai efoawe faksw df;lskjfd oawe
-                        asdpjasd asd asd f ewf g erg h szdgwer tgszdfgv azs gszdf
+                        I am passionate about programming and problem solving.
+                        I love to read on how a piece of technology works. 
+                        It's cool to see how human advance technology at such a rapid pace. <br />
+                        My interest lies in logical and practical stuff and memorization. <br />
+                        Always learn random languages or re-creating existing application.
                     </p>
 
                     <a href='#contact' className='btn btn-primary'>Let's Talk</a>

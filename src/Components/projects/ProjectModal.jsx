@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 
 import TagList from "./TagList";
+import LinkList from "./LinkList";
 
 import './projectModal.css'
 
@@ -13,13 +14,17 @@ const Modal = ({ closeFunc, splashImg, images, title, year, tags, content, links
                 <div className="container__modal-image">
                     <img src={splashImg} alt="" />
                 </div>
-                
+
                 <TagList taglist={tags} />
 
                 <div className="container__modal-details">
                     <h2>{title + " (" + year + ")"}</h2>
-                    <p>{content}</p>
+                    {
+                        content.split('\n').map(i => {return <p>{i}</p>})
+                    }
                 </div>
+
+                <LinkList linklist={links} />
             </div>
         </div>
     )
@@ -32,7 +37,7 @@ const ModalButton = ({ ...data }) => {
     };
     return (
         <>
-            <a onClick={toggleModal} className='btn'>Read more...</a>
+            <span onClick={toggleModal} className='btn'>Read more...</span>
             {isModalShown ? <Modal closeFunc={toggleModal} {...data} /> : <></>}
         </>
     )

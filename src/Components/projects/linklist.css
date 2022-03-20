@@ -1,0 +1,9 @@
+.linkList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.linkItem {
+    font-size: 0.8rem;
+}

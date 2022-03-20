@@ -4,9 +4,9 @@ import './tagList.css'
 
 const TagList = (({taglist}) => {
     return (
-        <div className="portfolio__item-tagList">
+        <div className="tagList">
         {
-            taglist.map((tagname) => { return <small className="portfolio__item-tagItem">{tagname}</small>})
+            taglist.map((tagname) => { return <small className="tagItem">{tagname}</small>})
         }
         </div>
     )

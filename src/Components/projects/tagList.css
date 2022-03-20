@@ -1,10 +1,11 @@
-.portfolio__item-tagList {
+.tagList {
     display: flex;
+    flex-wrap: wrap;
     gap: 0.5rem;
     margin-top: 0.5rem;
 }
 
-.portfolio__item-tagItem {
+.tagItem {
     width: max-content;
     padding: 0 0.5rem 0 0.5rem;
     background: rgb(77 181 255 / 44%);

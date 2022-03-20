@@ -32,6 +32,11 @@
     margin-bottom: 1rem;
 }
 
+.portfolio__container-showmore {
+    margin-top: 2rem;
+    text-align: center;
+}
+
 /* MEDIA QUERIES (MEDIUM DEVICES) */
 @media screen and (max-width: 1024px) {
     .portfolio__container {

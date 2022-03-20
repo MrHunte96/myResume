@@ -1,61 +1,123 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import ShowMoreProjects from './ProjectShowMore'
 
 import Img1 from '../../resources/dummy.jpg'
 
 import './projects.css';
 
-const data = [
+const projects = [
     {
         id: 1,
         image: Img1,
-        title: 'my title1',
+        title: 'Spiritus',
         viewmore: 'modal',
         download: 'https://google.com'
     }, {
         id: 2,
         image: Img1,
-        title: 'my title2',
+        title: 'Cosmic Hunter : Bounties of the Galaxy',
         viewmore: 'modal',
         download: 'https://google.com'
     }, {
         id: 3,
         image: Img1,
-        title: 'my title3',
+        title: 'Yippy\'s Fortress',
         viewmore: 'modal',
         download: 'https://google.com'
     }, {
         id: 4,
         image: Img1,
-        title: 'my title5',
+        title: 'Step',
+        viewmore: 'modal',
+        download: 'https://google.com'
+    }, {
+        id: 5,
+        image: Img1,
+        title: 'Numerelic',
+        viewmore: 'modal',
+        download: 'https://google.com'
+    }, {
+        id: 6,
+        image: Img1,
+        title: 'Numerelic',
+        viewmore: 'modal',
+        download: 'https://google.com'
+    }, {
+        id: 7,
+        image: Img1,
+        title: 'Undefined Invasion',
+        viewmore: 'modal',
+        download: 'https://google.com'
+    }, {
+        id: 8,
+        image: Img1,
+        title: 'Vroom Vroom Rider',
         viewmore: 'modal',
         download: 'https://google.com'
     }
 ];
 
+const personalProjects = [
+    {
+        id: 1,
+        image: Img1,
+        title: 'Wordle In Python',
+        viewmore: 'modal',
+        download: 'https://google.com'
+    },{
+        id: 2,
+        image: Img1,
+        title: 'Bounce Classic In Python',
+        viewmore: 'modal',
+        download: 'https://google.com'
+    },{
+        id: 3,
+        image: Img1,
+        title: 'N-Queens Problem',
+        viewmore: 'modal',
+        download: 'https://google.com'
+    },{
+        id: 4,
+        image: Img1,
+        title: 'Undefined Invasion - Invaded',
+        viewmore: 'modal',
+        download: 'https://google.com'
+    },{
+        id: 5,
+        image: Img1,
+        title: 'Spam Da Button',
+        viewmore: 'modal',
+        download: 'https://google.com'
+    },{
+        id: 6,
+        image: Img1,
+        title: 'Prisoner Escape',
+        viewmore: 'modal',
+        download: 'https://google.com'
+    },{
+        id: 7,
+        image: Img1,
+        title: 'Zoe Adventure',
+        viewmore: 'modal',
+        download: 'https://google.com'
+    }
+];
+
+
 const Projects = () => {
     return (
         <section id="projects">
             <h5>My Recent Work</h5>
-            <h2>Projects</h2>
+            <h2>Maxi Projects</h2>
 
-            <div className="container portfolio__container">
-                {
-                    data.map(({ id, image, title, viewmore, download }) => {
-                        return (
-                            <article key={id} className='portfolio__item'>
-                                <div className="portfolio__item-image">
-                                    <img src={image} alt={title} />
-                                </div>
-                                <h3>{title}</h3>
-                                <div className='portfolio__item-cta'>
-                                    <a href={viewmore} className='btn'>View more</a>
-                                    <a href={download} className='btn btn-primary'>Download</a>
-                                </div>
-                            </article>
-                        )
-                    })
-                }
-            </div>
+            <ShowMoreProjects displayList={projects} />
+
+            <br /><br />
+            <h2>Mini Personal Projects</h2>
+
+            <ShowMoreProjects displayList={personalProjects} />
+           
         </section>
     );
 }

@@ -10,16 +10,20 @@ const ProjectShowMore = ({ displayList }) => {
         <>
             <div className="container portfolio__container">
                 {
-                    (isReadMore ? displayList.slice(0, 3) : displayList).map(({ id, image, title, viewmore, download }) => {
+                    (isReadMore ? displayList.slice(0, 3) : displayList).map(({ id, splashImg, images, title, year, content, links }) => {
                         return (
                             <article key={id} className='portfolio__item'>
                                 <div className="portfolio__item-image">
-                                    <img src={image} alt={title} />
+                                    <img src={splashImg} alt={title} />
                                 </div>
-                                <h3>{title}</h3>
+
+                                <h3>{title + " (" + year + ")"}</h3>
+                                {
+                                    content.length > 140 ? <p>{content.slice(0,140) + "..."}</p> : <p>{content}</p>
+                                }
+                                
                                 <div className='portfolio__item-cta'>
-                                    <ModalButton image={image} content={viewmore}/>
-                                    <a href={download} className='btn btn-primary'>Download</a>
+                                    <ModalButton splashImg={splashImg} images={images} title={title} year={year} content={content} links={links}/>
                                 </div>
                             </article>
                         )

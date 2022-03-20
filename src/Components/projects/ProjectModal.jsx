@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import './projectModal.css'
 
-const Modal = ({ closeFunc, image, content }) => {
+const Modal = ({ closeFunc, splashImg, images, title, year, content, links }) => {
     return (
         <div className="container__modal">
             <div className="container__modal-content">
                 <span onClick={closeFunc} className='container__modal-close'>&times;</span>
 
-                <div className="portfolio__item-image">
-                    <img src={image} alt="" />
+                <div className="container__modal-image">
+                    <img src={splashImg} alt="" />
                 </div>
-                <p>{content}</p>
+                <div className="container__modal-details">
+                    <h2>{title + " (" + year + ")"}</h2>
+                    <p>{content}</p>
+                </div>
             </div>
         </div>
     )
@@ -23,7 +26,7 @@ const ModalButton = ({ ...data }) => {
     };
     return (
         <>
-            <a onClick={toggleModal} className='btn'>Show Modal</a>
+            <a onClick={toggleModal} className='btn'>Read more...</a>
             {isModalShown ? <Modal closeFunc={toggleModal} {...data} /> : <></>}
         </>
     )

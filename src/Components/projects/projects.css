@@ -23,7 +23,13 @@
 }
 
 .portfolio__item h3 {
-    margin: 1.2rem 0 2rem;
+    margin: 1.2rem 0 0;
+}
+
+.portfolio__item p {
+    color: var(--color-light);
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
 }
 
 .portfolio__item-cta {

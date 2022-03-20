@@ -37,5 +37,7 @@ nav a.active {
     nav {
         display: flex;
         flex-direction: row;
+        right: 50%;
+        transform: translateX(50%);
     }
 }

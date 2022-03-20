@@ -7,7 +7,7 @@
 .portfolio__item-tagItem {
     width: max-content;
     padding: 0 0.5rem 0 0.5rem;
-    background: blueviolet;
+    background: rgb(77 181 255 / 44%);
     border-radius: 1rem;
     color: var(--color-white);
 }

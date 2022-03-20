@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/myResume/static/css/main.b04e9b90.css",
-    "main.js": "/myResume/static/js/main.6eb28f8a.js",
+    "main.css": "/myResume/static/css/main.e5849e2e.css",
+    "main.js": "/myResume/static/js/main.1e03a9c3.js",
     "static/media/hongwei_cv.pdf": "/myResume/static/media/hongwei_cv.4e34f3ca422b06988ecb.pdf",
     "static/media/profile3.png": "/myResume/static/media/profile3.f5bafcc0694ab147ebb5.png",
     "static/media/profile4.jpg": "/myResume/static/media/profile4.d9e8d2700faab0641cf0.jpg",
     "static/media/background_texture.png": "/myResume/static/media/background_texture.32ea31c2f29e3b76650e.png",
     "index.html": "/myResume/index.html",
-    "main.b04e9b90.css.map": "/myResume/static/css/main.b04e9b90.css.map",
-    "main.6eb28f8a.js.map": "/myResume/static/js/main.6eb28f8a.js.map"
+    "main.e5849e2e.css.map": "/myResume/static/css/main.e5849e2e.css.map",
+    "main.1e03a9c3.js.map": "/myResume/static/js/main.1e03a9c3.js.map"
   },
   "entrypoints": [
-    "static/css/main.b04e9b90.css",
-    "static/js/main.6eb28f8a.js"
+    "static/css/main.e5849e2e.css",
+    "static/js/main.1e03a9c3.js"
   ]
 }

@@ -6,9 +6,10 @@ import './experience.css';
 const languages = [
     { id: 1, language: 'C++', proficiency: 's100' },
     { id: 2, language: 'Python', proficiency: 's60' },
-    { id: 3, language: 'C#', proficiency: 's40' },
-    { id: 4, language: 'Html/Css', proficiency: 's20' },
-    { id: 5, language: 'Javascript', proficiency: 's20' }
+    { id: 3, language: 'MySql', proficiency: 's60' },
+    { id: 4, language: 'C#', proficiency: 's40' },
+    { id: 5, language: 'Html/Css', proficiency: 's20' },
+    { id: 6, language: 'Javascript', proficiency: 's20' }
 ];
 
 const softwares = [

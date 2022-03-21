@@ -14,7 +14,7 @@ const ProjectShowMore = ({ displayList }) => {
         <>
             <div className="container portfolio__container">
                 {
-                    (isReadMore ? displayList.slice(0, 3) : displayList).map(({ id, splashImg, images, title, year, tags, content, links }) => {
+                    (isReadMore ? displayList.slice(0, 3) : displayList).map(({ id, splashImg, title, year, tags, content, ...others }) => {
                         return (
                             <article key={id} className='portfolio__item'>
                                 <div className="portfolio__item-image">
@@ -29,7 +29,7 @@ const ProjectShowMore = ({ displayList }) => {
                                 }
                                 
                                 <div className='portfolio__item-cta'>
-                                    <ModalButton splashImg={splashImg} images={images} title={title} year={year} tags={tags} content={content} links={links}/>
+                                    <ModalButton splashImg={splashImg} title={title} year={year} tags={tags} content={content} {...others} />
                                 </div>
                             </article>
                         )

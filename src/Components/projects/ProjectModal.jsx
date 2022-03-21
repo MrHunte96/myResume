@@ -2,18 +2,25 @@ import React, { useState } from "react";
 
 import TagList from "./TagList";
 import LinkList from "./LinkList";
+import YouTubePlayer from "./YoutubeEmbed";
 
 import './projectModal.css'
 
-const Modal = ({ closeFunc, splashImg, images, title, year, tags, content, links }) => {
+const Modal = ({ closeFunc, splashImg, images, videoid, title, year, tags, content, links }) => {
     return (
         <div className="container__modal">
             <div className="container__modal-content">
                 <span onClick={closeFunc} className='container__modal-close'>&times;</span>
 
-                <div className="container__modal-image">
-                    <img src={splashImg} alt="" />
-                </div>
+                {
+                    images.length > 0 ? (
+                        <div className="container__modal-image">
+                            <img src={images[0]} alt="" />
+                        </div>
+                    ) : videoid.length > 0 ? (
+                        <YouTubePlayer id={videoid}></YouTubePlayer>
+                    ) : (<></>)
+                }
 
                 <TagList taglist={tags} />
 

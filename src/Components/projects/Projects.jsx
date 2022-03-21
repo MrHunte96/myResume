@@ -1,14 +1,18 @@
 import React from 'react';
 
-import ShowMoreProjects from './ProjectShowMore'
+import ShowMoreProjects from './ProjectShowMore';
+
+import VroomVroomRider_SplashImg from '../../resources/projectImages/(2014)VroomVroomRider/Splash.jpg';
+import Spiritus_SplashImg from '../../resources/projectImages/(2021)Spiritus/Splash.jpg';
+import Spiritus_EditorImg1 from '../../resources/projectImages/(2021)Spiritus/Editor_Screenshot1.jpg';
 
 const googleLink = "https://drive.google.com/uc?export=view&id=";
 const projects = [
     {
         id: 1,
-        splashImg: googleLink + "1rzuh0PqztB16TQf00T-WgWr5iCJP_Glh",
-        images: [],
-        video: '',
+        splashImg: Spiritus_SplashImg,
+        images: [Spiritus_EditorImg1],
+        videoid: '',
         title: 'Spiritus',
         year: 2021,
         tags: ['C++', 'C#', 'OpenGL', 'Custom 3D Engine'],
@@ -26,6 +30,7 @@ const projects = [
         id: 2,
         splashImg: googleLink + "1vwjGjTTNmCXnpZYo4Qqyc7qPV2M0ieIz",
         images: [],
+        videoid: '',
         title: 'Cosmic Hunter : Bounties of the Galaxy',
         year: 2020,
         tags: ['C++', 'C#', 'OpenGL', 'Custom 2D Engine'],
@@ -38,6 +43,7 @@ const projects = [
         id: 3,
         splashImg: googleLink + "1Sk4tpLuTODdehzvID3EG7gN1g1u59GLJ",
         images: [],
+        videoid: '',
         title: 'Yippy\'s Fortress',
         year: 2019,
         tags: ['C++', 'OpenGL'],
@@ -53,6 +59,7 @@ const projects = [
         id: 4,
         splashImg: googleLink + "1LLCUZ3n3SOaUVojaKjewtLPb9Ipkgyvk",
         images: [],
+        videoid: '',
         title: 'Step',
         year: 2018,
         tags: ['C++', 'Win32 Console'],
@@ -67,6 +74,7 @@ const projects = [
         id: 5,
         splashImg: googleLink + "1AGjHzoPQb-r2R_sWdf7SmmHwTdtpwbZO",
         images: [],
+        videoid: '',
         title: 'Numerelic',
         year: 2016,
         tags: ['C#', 'Unity3D'],
@@ -85,6 +93,7 @@ const projects = [
         id: 6,
         splashImg: googleLink + "1y6t9FvMV-mxByQuTfMUq4krinnFofDm9",
         images: [],
+        videoid: '',
         title: 'Undefined Invasion',
         year: 2015,
         tags: ['C#', 'Unity3D'],
@@ -96,8 +105,9 @@ const projects = [
         links: [['Download', 'https://drive.google.com/uc?export=download&id=1ZpN7Acy7bKVF_RfycK8k0regG0imzD0S']]
     }, {
         id: 7,
-        splashImg: googleLink + "1qM1sURz9u1fGqDieRp_dwmxUaP3Exlsc",
+        splashImg: VroomVroomRider_SplashImg,
         images: [],
+        videoid: 'vTem7ye8vCw',
         title: 'Vroom Vroom Rider',
         year: 2014,
         tags: ['C#', 'Unity3D'],
@@ -117,6 +127,7 @@ const personalProjects = [
         id: 1,
         splashImg: "https://github.com/MrHunte96/Wordle_In_Python/blob/main/Assets/Logo2.png?raw=true",
         images: [],
+        videoid: 'NZAffJDxBNQ',
         title: 'Wordle In Python',
         year: 2022,
         tags: ['Python', 'Pygame'],
@@ -127,6 +138,7 @@ const personalProjects = [
         id: 2,
         splashImg: "https://github.com/MrHunte96/Bounce_In_Python/blob/main/Assets/Title.png?raw=true",
         images: [],
+        videoid: '5MWIdxxEp7o',
         title: 'Bounce Classic In Python',
         year: 2021,
         tags: ['Python', 'Pygame'],
@@ -140,6 +152,7 @@ const personalProjects = [
         id: 3,
         splashImg: googleLink + "1e7F9g5B3JwGi0Alhv2Etr_UNGlGq1Q9X",
         images: [],
+        videoid: '',
         title: 'N-Queens Problem',
         year: 2021,
         tags: ['Google Script', 'Html', 'JavaScript'],
@@ -149,6 +162,7 @@ const personalProjects = [
         id: 4,
         splashImg: googleLink + "1yJXesjDeO-AdIJogQ74am3KrWz_QcRFI",
         images: [],
+        videoid: '',
         title: 'Undefined Invasion - Invaded',
         year: 2017,
         tags: ['C#', 'Unity3D'],
@@ -160,6 +174,7 @@ const personalProjects = [
         id: 5,
         splashImg: googleLink + "1gfReEZ-7wByAlrdy24staxZUR00-kp8h",
         images: [],
+        videoid: '',
         title: 'Spam Da Button',
         year: 2016,
         tags: ['C#', 'Unity3D'],
@@ -171,6 +186,7 @@ const personalProjects = [
         id: 6,
         splashImg: googleLink + "1pIcNzJ-nbJQEBsYIpgfnwRzvyeugsXzu",
         images: [],
+        videoid: '',
         title: 'Prisoner Escape',
         year: 2015,
         tags: ['C#', 'Unity3D'],
@@ -182,6 +198,7 @@ const personalProjects = [
         id: 7,
         splashImg: googleLink + "1wHVaCKUsJ4iACKXH-ZpYd5sFEh__cjuB",
         images: [],
+        videoid: '',
         title: 'Zoe Adventure',
         year: 2014,
         tags: ['C', 'SDL'],

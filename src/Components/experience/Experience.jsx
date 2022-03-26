@@ -1,24 +1,25 @@
 import React from 'react';
 import { AiFillCheckSquare } from 'react-icons/ai';
 
+//https://icons8.com/
+//https://worldvectorlogo.com/
+import c from '../../resources/Icons/c.svg';
+import cplusplus from '../../resources/Icons/cplusplus.svg';
+import csharp from '../../resources/Icons/csharp.svg';
+import css from '../../resources/Icons/css.svg';
+import html from '../../resources/Icons/html.svg';
+import javascript from '../../resources/Icons/javascript.svg';
+import maya from '../../resources/Icons/maya.svg';
+import mysql from '../../resources/Icons/mysql.svg';
+import photoshop from '../../resources/Icons/photoshop.svg';
+import python from '../../resources/Icons/python.svg';
+import qt from '../../resources/Icons/qt.svg';
+import react from '../../resources/Icons/react.svg';
+import unity3d from '../../resources/Icons/unity3d.svg';
+
 import './experience.css';
-
-const languages = [
-    { id: 1, language: 'C++', proficiency: 's100' },
-    { id: 2, language: 'Python', proficiency: 's60' },
-    { id: 3, language: 'MySql', proficiency: 's40' },
-    { id: 4, language: 'C#', proficiency: 's40' },
-    { id: 5, language: 'Html/Css', proficiency: 's20' },
-    { id: 6, language: 'Javascript', proficiency: 's20' }
-];
-
-const softwares = [
-    { id: 1, software: 'Unity3D', proficiency: 's80' },
-    { id: 2, software: 'Photoshop', proficiency: 's80' },
-    { id: 3, software: 'Maya', proficiency: 's40' },
-    { id: 4, software: 'React', proficiency: 's20' },
-    { id: 5, software: 'QT', proficiency: 's10' },
-];
+const languages = [c, cplusplus, csharp, python, mysql, html, css, javascript];
+const softwares = [unity3d, photoshop, maya, react, qt];
 
 const Experience = () => {
     return (
@@ -27,42 +28,26 @@ const Experience = () => {
             <h2>My Experience</h2>
 
             <div className='container experience__container'>
-                <div className='experience__Languages'>
                     <h3>Languages</h3>
-                    <div className='experience__content'>
-                        {
-                            languages.map(({ id, language, proficiency }) => {
-                                return (
-                                    <article key={id} className='experience__details'>
-                                        <AiFillCheckSquare className='experience__details-icon' />
-                                        <h4>{language}</h4>
-                                        <div className="experience__details-experience-bar">
-                                            <div className={"skills " + proficiency}>{proficiency.slice(1) + "%"}</div>
-                                        </div>
-                                    </article>
-                                )
-                            })
-                        }
-                    </div>
+                <div className='experience__content'>
+                    {
+                        languages.map((icon) => {
+                            return (
+                                <img className="experience__content-icon" src={icon} style={{ width: "48px", height: "48px" }}></img>
+                            )
+                        })
+                    }
                 </div>
 
-                <div className='experience__Software'>
-                    <h3>Software</h3>
-                    <div className='experience__content'>
-                        {
-                            softwares.map(({ id, software, proficiency }) => {
-                                return (
-                                    <article key={id} className='experience__details'>
-                                        <AiFillCheckSquare className='experience__details-icon' />
-                                        <h4>{software}</h4>
-                                        <div className="experience__details-experience-bar">
-                                            <div className={"skills " + proficiency}>{proficiency.slice(1) + "%"}</div>
-                                        </div>
-                                    </article>
-                                )
-                            })
-                        }
-                    </div>
+                <h3>Software</h3>
+                <div className='experience__content'>
+                    {
+                        softwares.map((icon) => {
+                            return (
+                                <img className="experience__content-icon" src={icon} style={{ width: "48px", height: "48px" }}></img>
+                            )
+                        })
+                    }
                 </div>
             </div>
         </section>

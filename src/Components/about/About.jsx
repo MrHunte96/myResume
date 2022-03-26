@@ -38,9 +38,9 @@ const About = () => {
                     <p>
                         Technologies are cool, but do you know what else is? Zero Kelvin. <br />
                         I was introduced to programming in my polytechnic through game development.
-                        The interest quickly grew and I became attached to it due to the fact that it requires problem solving and it's practicality.
-                        This opened that door to endless possibilities in what I can program.
-                        I am dedicated to improving skills through hands-on learning and development work. <br />
+                        The interest quickly grew and I became attached to it because it requires problem-solving and its practicality.
+                        This opened the door to endless possibilities in what I can program.
+                        I am dedicated to improving my skills through hands-on learning and development work. <br />
                         Adept at using C, C++, and other programming languages to produce clean code.
                     </p>
 

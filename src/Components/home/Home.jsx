@@ -3,7 +3,7 @@ import { BsLinkedin } from 'react-icons/bs'
 import { BsGithub } from 'react-icons/bs'
 
 import CV from '../../resources/profile/hongwei_cv.pdf';
-import ProfileImg from '../../resources/profile/profile3.png'
+import ProfileImg from '../../resources/profile/profile_swag.png'
 
 import './home.css';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { BsAwardFill } from 'react-icons/bs'
 import { AiFillFolder } from 'react-icons/ai'
 
-import ProfileImg from '../../resources/profile/profile4.jpg'; //'../../resources/profile.jpg'
+import ProfileImg from '../../resources/profile/profile_square.jpg'; //'../../resources/profile.jpg'
 
 import './about.css';
 
@@ -36,11 +36,12 @@ const About = () => {
                     </div>
 
                     <p>
-                        I am passionate about programming and problem solving.
-                        I love to read on how a piece of technology works. 
-                        It's cool to see how human advance technology at such a rapid pace. <br />
-                        My interest lies in logical and practical stuff and memorization. <br />
-                        Always learn random languages or re-creating existing application.
+                        Technologies are cool, but do you know what else is? Zero Kelvin. <br />
+                        I was introduced to programming in my polytechnic through game development.
+                        The interest quickly grew and I became attached to it due to the fact that it requires problem solving and it's practicality.
+                        This opened that door to endless possibilities in what I can program.
+                        I am dedicated to improving skills through hands-on learning and development work. <br />
+                        Adept at using C, C++, and other programming languages to produce clean code.
                     </p>
 
                     <a href='#contact' className='btn btn-primary'>Let's Talk</a>

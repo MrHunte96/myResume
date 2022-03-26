@@ -16,19 +16,11 @@
     flex-direction: column;
     background-color: var(--color-bg-variant);
     border-radius: 1rem;
-    border: 1px solid transparent;
+    border: 2px solid;
+    border-color: var(--color-light);
     margin: 1rem auto; /* 15% from the top and centered */
-    padding: 20px;
+    padding: 1rem 2rem 3rem 2rem;
     width: 50%;
-}
-
-.container__modal-image {
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
-.container__modal-details {
-    margin: 1rem 1rem;
 }
 
 .container__modal-details p {
@@ -38,7 +30,7 @@
 }
 
 .container__modal-close {
-    color: var(--color-white);
+    color: var(--color-light);
     text-align: right;
     margin-top: -10px;
     font-size: 28px;
@@ -47,7 +39,7 @@
   
 .container__modal-close:hover,
 .container__modal-close:focus {
-    color: var(--color-bg-variant);
+    color: var(--color-white);
     text-decoration: none;
     cursor: pointer;
 }

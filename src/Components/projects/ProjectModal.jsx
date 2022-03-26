@@ -3,10 +3,11 @@ import React, { useState } from "react";
 import TagList from "./TagList";
 import LinkList from "./LinkList";
 import YouTubePlayer from "./YoutubeEmbed";
+import ImageSlideshow from "./ImageSlideshow";
 
 import './projectModal.css'
 
-const Modal = ({ closeFunc, splashImg, images, videoid, title, year, tags, content, links }) => {
+const Modal = ({ closeFunc, images, videoid, title, year, tags, content, links }) => {
     return (
         <div className="container__modal">
             <div className="container__modal-content">
@@ -14,11 +15,9 @@ const Modal = ({ closeFunc, splashImg, images, videoid, title, year, tags, conte
 
                 {
                     images.length > 0 ? (
-                        <div className="container__modal-image">
-                            <img src={images[0]} alt="" />
-                        </div>
+                        <ImageSlideshow images={images} />
                     ) : videoid.length > 0 ? (
-                        <YouTubePlayer id={videoid}></YouTubePlayer>
+                        <YouTubePlayer id={videoid} />
                     ) : (<></>)
                 }
 

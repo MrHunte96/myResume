@@ -29,7 +29,7 @@ const ProjectShowMore = ({ displayList }) => {
                                 }
                                 
                                 <div className='portfolio__item-cta'>
-                                    <ModalButton splashImg={splashImg} title={title} year={year} tags={tags} content={content} {...others} />
+                                    <ModalButton title={title} year={year} tags={tags} content={content} {...others} />
                                 </div>
                             </article>
                         )

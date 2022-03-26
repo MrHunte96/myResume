@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/myResume/static/css/main.70e610ee.css",
-    "main.js": "/myResume/static/js/main.f5928b5d.js",
+    "main.css": "/myResume/static/css/main.70ac6bbf.css",
+    "main.js": "/myResume/static/js/main.2a4f5079.js",
     "static/media/Poster.png": "/myResume/static/media/Poster.a298c64d52becee8b4ca.png",
     "static/media/hongwei_cv.pdf": "/myResume/static/media/hongwei_cv.4e34f3ca422b06988ecb.pdf",
     "static/media/3.png": "/myResume/static/media/3.f89c151c6620fe6cd2e9.png",
@@ -53,12 +53,25 @@
     "static/media/1.jpg": "/myResume/static/media/1.564e8f89abe2422bcc7a.jpg",
     "static/media/profile_square.jpg": "/myResume/static/media/profile_square.d9e8d2700faab0641cf0.jpg",
     "static/media/background_texture.png": "/myResume/static/media/background_texture.32ea31c2f29e3b76650e.png",
+    "static/media/react.svg": "/myResume/static/media/react.03efd7ced1ca43423bdc7a918c2472ed.svg",
+    "static/media/mysql.svg": "/myResume/static/media/mysql.c0571d009f945f2381476ad07ceb4d99.svg",
+    "static/media/cplusplus.svg": "/myResume/static/media/cplusplus.a776a608546a79750b150829bc9b099e.svg",
+    "static/media/csharp.svg": "/myResume/static/media/csharp.04d9d2bb18b9781567f7340691dcc686.svg",
+    "static/media/qt.svg": "/myResume/static/media/qt.3448df0eb7a0903fa858a7012afd7ca2.svg",
+    "static/media/c.svg": "/myResume/static/media/c.21a8fab81e76bf019238a55c1c88198c.svg",
+    "static/media/photoshop.svg": "/myResume/static/media/photoshop.596654fc21570b648b364c9cfbb3804e.svg",
+    "static/media/unity3d.svg": "/myResume/static/media/unity3d.e01f0e366a828cafdede9addc9b362ae.svg",
+    "static/media/python.svg": "/myResume/static/media/python.026a62687ef705a39cfc755d7457859c.svg",
+    "static/media/javascript.svg": "/myResume/static/media/javascript.081325c6f229605dce15142ddd948d6d.svg",
     "index.html": "/myResume/index.html",
-    "main.70e610ee.css.map": "/myResume/static/css/main.70e610ee.css.map",
-    "main.f5928b5d.js.map": "/myResume/static/js/main.f5928b5d.js.map"
+    "static/media/maya.svg": "/myResume/static/media/maya.0e28ce4661b2d816ba285667876b9744.svg",
+    "static/media/css.svg": "/myResume/static/media/css.4e47c3122b8d2476a02f97dcfcb28640.svg",
+    "static/media/html.svg": "/myResume/static/media/html.c1bb84e022ca9d76984d4b943bd678fd.svg",
+    "main.70ac6bbf.css.map": "/myResume/static/css/main.70ac6bbf.css.map",
+    "main.2a4f5079.js.map": "/myResume/static/js/main.2a4f5079.js.map"
   },
   "entrypoints": [
-    "static/css/main.70e610ee.css",
-    "static/js/main.f5928b5d.js"
+    "static/css/main.70ac6bbf.css",
+    "static/js/main.2a4f5079.js"
   ]
 }

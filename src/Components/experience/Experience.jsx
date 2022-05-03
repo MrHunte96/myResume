@@ -18,8 +18,8 @@ import react from '../../resources/Icons/react.svg';
 import unity3d from '../../resources/Icons/unity3d.svg';
 
 import './experience.css';
-const languages = [c, cplusplus, csharp, python, mysql, html, css, javascript];
-const softwares = [unity3d, photoshop, maya, react, qt];
+const languages = [c, cplusplus, csharp, python, mysql/*, html, css, javascript*/];
+const softwares = [unity3d, photoshop, maya,/* react, qt*/];
 
 const Experience = () => {
     return (
